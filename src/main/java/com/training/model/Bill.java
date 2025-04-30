@@ -36,7 +36,8 @@ public class Bill {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@EqualsAndHashCode.Include 
-	private int billNumber;
+	@Column(name="bill_id")
+	private int billId;
 	
 	private LocalDate billDate; 
 	

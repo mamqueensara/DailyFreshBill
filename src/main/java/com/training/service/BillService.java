@@ -18,9 +18,7 @@ public class BillService {
 
 	public Bill addNewBill(Bill bill) {
 		return repo.save(bill);
-
 	}
-
 	public List<Bill> getAllBills() {
 		return repo.findAll();
 	}
